@@ -2,11 +2,17 @@
 <html>
 <body>
 <h1>Lab 3</h1>
-<p>Hello! Welcome to my webpage for Laboratory 3.</p>
+<p>Hello! Welcome to my webpage for Laboratory 3. The link to the code on github can be found <a href = "https://github.com/BradenClough/bradenclough.github.io/blob/main/PlantHeight.ipynb">here.</a></p>
 <h2>Scatterplots</h2>
 <p>Scatterplots are a way of visualizing collections of data without a line. Each point on a scatterplot is an individual data entry. In the shown plot, one can see every entry of how a plant's height changes as tempurature increases. This particular plot shows the user how the plants are more prone to being taller as tempurature increases.</p>
 <img src = "https://cdn.discordapp.com/attachments/611642389592801296/905890309706248252/scatterplot.png" alt = "Scatterplot">
-<h3>Line of Best Fit</h3>
+<h2>Line of Best Fit</h2>
 <p>The line of best fit is a way of showing the relation between points on a scatter plot. It serves the purpose of estimating how the y value of the graph changes in proportion to the x axis. It is expressed as the formula y = mx+b. The y value is calculated by mulitplying the x value by the slope (m) then adding the y intercept (b). When the code runs, you can see it print the forumla each input's line of best fit, starting with the phrase "The line of best fit is"</p>
+<p>Here is an example of a line of best fit for the amount of chirps crickets make based on the tempurature</p>
+<img src = "https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/924/2015/11/25201200/CNX_Precalc_Figure_02_04_0032.jpg" alt = "Line of Best Fit">
+<h2>Standard Error</h2>
+<p> A line of best fit's standard error is a way of estimating how far off from the line of best fit each data point will be. It can be found in the code as "The line's standard error is: " It is calculated by averaging the margin of error for all data points. In my code, it appears in a for loop using i as the looping variable. The line of code that calculates it is "SEline += file.height[i] - (m * xColumn[i] + b)"</p>
+<h2>R Squared</h2>
+<p>The coefficient of determination, also known as R Squared, is the measure of how much the y axis is impacted by the x axis. It is found by deviding the standard error of the average y value by the standard error of the line of best fit. It can be found in the count printed with the label "R Squared." The line of coude that calculates it is "rSquared = 1 - (SEline / SEyAverage)"</p>
 </body>
 </html>
